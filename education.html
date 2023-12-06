@@ -14,7 +14,7 @@
             background-color: white;
             color: purple;
             text-align: center;
-            padding: 20px;
+            padding: 0px;
             opacity: 0;
             animation: fadeIn 1.5s ease-out forwards;
         }
@@ -31,7 +31,15 @@
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            margin-top: 30vh;
+            margin-top: 20vh;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        li {
+            list-style-type: none;
         }
 
         .banner {
@@ -58,6 +66,16 @@
             display: inline-block; /* Ensure each button is a block element */
         }
 
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
         main {
             margin-top: 80px;
         }
@@ -66,8 +84,9 @@
 <body>
 
     <div class="banner">
-        <a href="index.html">Home</a>
+        
         <div>
+            <a href="index.html">Home</a>
             <a href="education.html">Education</a>
             <a href="experience.html">Experience</a>
         </div>
@@ -80,7 +99,7 @@
     <h2>University of Maryland, College Park</h2>
     <ul>
         <li>B.S. Computer Science, Mathematics</li>
-        <li><strong>Relevant Coursework includes:</strong></li>
+        <h2><strong>Relevant Coursework includes:</strong></h2>
         <li>-Object Oriented Programming, Foundations in Cybersecurity, Analysis of Algorithms, Elements of Computer Systems, Programming Languages, Introduction to Cybersecurity, Introduction to Networking, Robotics, Discrete Mathematics, Applied Probability and Statistics, Linear Algebra and Differential Equations, Research Design Sciences</li>
     </ul>
 
