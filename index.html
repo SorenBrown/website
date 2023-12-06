@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatted Page</title>
-    <script>
-        // JavaScript code for formatting or interactivity
-        function formatText() {
-            var nameElement = document.getElementById("name");
-            nameElement.style.color = "blue";
-            nameElement.style.fontWeight = "bold";
+    <style>
+        body {
+            background-color: black;
+            color: purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-    </script>
+
+        h1 {
+            font-size: 48px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1 id="name">Hi, my name is Soren Brown</h1>
-    <button onclick="formatText()">Format Text</button>
+    <h1 id="name">Soren Brown</h1>
 
 </body>
 </html>
