@@ -31,11 +31,16 @@
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
+	    margin-top: 20vh;
         }
 
         h2 {
             font-size: 24px;
         }
+
+	li {
+	    list-style-type: none;
+	}
 
         img {
             width: 300px;
@@ -44,33 +49,32 @@
             display: block;
             margin: 20px auto;
             opacity: 0;
-            animation: fadeIn 1.5s ease-out 0.5s forwards;
+            animation: fadeIn 1.5s ease-out forwards;
         }
 
-        .banner {
-            background-color: purple;
-            color: white;
-            padding: 10px;
-            margin-bottom: 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between; /* Align home and links to the ends */
-            align-items: center;
-        }
+    .banner {
+        background-color: purple;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        text-align: center; /* Center the content horizontally */
+    }
 
-        .banner a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 10px;
-            border: 2px purple;
-            border-radius: 5px;
-        }
+    .banner a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        border: 2px purple;
+        border-radius: 5px;
+        margin: 0 10px; /* Add margin to the buttons for spacing */
+        display: inline-block; /* Ensure each button is a block element */
+    }
 
         main {
             margin-top: 80px;
@@ -105,15 +109,14 @@
             <a href="experience.html">Experience</a>
         </div>
     </div>
-    <li> </li>
     <h1 id="name">Soren Brown</h1>
 
     <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Soren's Image">
 
     <h2>About Me</h2>
     
-    <li>-My name is Soren Brown</li>
-    <li>-I'm interested in AI and ML, I love mathematics and applying them into computer science.</li>
+    <li>My name is Soren Brown</li>
+    <li>I'm interested in AI and ML, I love mathematics and applying them into computer science.</li>
     
     <div id="education" class="hidden">
         <!-- Content for education section (hidden by default) -->
