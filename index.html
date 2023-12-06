@@ -6,7 +6,7 @@
     <title>Soren's Portfolio</title>
     <style>
         html, body {
-            margin: 0; /* Remove default margin on both html and body */
+            margin: 0;
             padding: 0;
         }
 
@@ -52,6 +52,9 @@
             width: 100%;
             top: 0;
             z-index: 1000;
+            display: flex;
+            justify-content: space-between; /* Align home and links to the ends */
+            align-items: center;
         }
 
         .banner a {
@@ -91,8 +94,11 @@
 <body>
 
     <div class="banner">
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
+        <a href="index.html">Home</a>
+        <div>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+        </div>
     </div>
 
     <h1 id="name">Soren Brown</h1>
