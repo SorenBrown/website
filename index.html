@@ -10,9 +10,9 @@
             color: purple;
             text-align: center;
             padding: 20px;
+            margin: 0; 
             opacity: 0;
             animation: fadeIn 1.5s ease-out forwards;
-            margin: 0; /* Remove default margin to ensure full width */
         }
 
         @keyframes fadeIn {
@@ -44,10 +44,10 @@
             color: white;
             padding: 10px;
             margin-bottom: 20px;
-            position: fixed; /* Fixed position to stay at the top */
-            width: 100%; /* Full width */
-            top: 0; /* Stick to the top */
-            z-index: 1000; /* Ensure it's on top of other elements */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
 
         .banner a {
@@ -57,13 +57,12 @@
             font-size: 18px;
             font-weight: bold;
             padding: 10px;
-            border: 2px purple;
+            border: 2px solid white;
             border-radius: 5px;
         }
 
-        /* Adjusted spacing to account for the fixed banner */
         main {
-            margin-top: 80px; /* Adjust as needed */
+            margin-top: 80px;
         }
 
         .hidden {
@@ -95,7 +94,6 @@
     <h1 id="name">Soren Brown</h1>
 
     <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Soren's Image">
-
 
     <div id="education" class="hidden">
         <!-- Content for education section (hidden by default) -->
