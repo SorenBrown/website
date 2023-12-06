@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Formatted Page</title>
+    <script>
+        // JavaScript code for formatting or interactivity
+        function formatText() {
+            var nameElement = document.getElementById("name");
+            nameElement.style.color = "blue";
+            nameElement.style.fontWeight = "bold";
+        }
+    </script>
 </head>
 <body>
 
-    <h1>Hi, my name is Soren Brown</h1>
+    <h1 id="name">Hi, my name is Soren Brown</h1>
+
+    <button onclick="formatText()">Format Text</button>
 
 </body>
 </html>
