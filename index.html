@@ -12,6 +12,7 @@
             padding: 20px;
             opacity: 0;
             animation: fadeIn 1.5s ease-out forwards;
+            margin: 0; /* Remove default margin to ensure full width */
         }
 
         @keyframes fadeIn {
@@ -43,6 +44,10 @@
             color: white;
             padding: 10px;
             margin-bottom: 20px;
+            position: fixed; /* Fixed position to stay at the top */
+            width: 100%; /* Full width */
+            top: 0; /* Stick to the top */
+            z-index: 1000; /* Ensure it's on top of other elements */
         }
 
         .banner a {
@@ -52,17 +57,13 @@
             font-size: 18px;
             font-weight: bold;
             padding: 10px;
-            border: 2px solid white;
+            border: 2px purple;
             border-radius: 5px;
         }
 
-        button {
-            font-size: 18px;
-            margin: 10px;
-            padding: 10px;
-            cursor: pointer;
-            opacity: 0;
-            animation: fadeIn 1.5s ease-out 1s forwards;
+        /* Adjusted spacing to account for the fixed banner */
+        main {
+            margin-top: 80px; /* Adjust as needed */
         }
 
         .hidden {
@@ -86,17 +87,15 @@
 </head>
 <body>
 
-    <h1 id="name">Soren Brown</h1>
-
-    <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Soren's Image">
-
     <div class="banner">
         <a href="education.html">Education</a>
         <a href="experience.html">Experience</a>
     </div>
 
-    <button onclick="toggleSection('education')">Education</button>
-    <button onclick="toggleSection('experience')">Experience</button>
+    <h1 id="name">Soren Brown</h1>
+
+    <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Soren's Image">
+
 
     <div id="education" class="hidden">
         <!-- Content for education section (hidden by default) -->
