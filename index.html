@@ -7,15 +7,25 @@
     <style>
         body {
             background-color: white;
-            color: black;
-            text-align: left;
+            color: purple;
+            text-align: center;
             padding: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            text-align: center;
         }
 
         img {
@@ -24,6 +34,8 @@
             object-fit: cover;
             display: block;
             margin: 20px auto;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out 0.5s forwards;
         }
 
         h2 {
@@ -36,6 +48,8 @@
             font-size: 18px;
             margin-bottom: 10px;
             text-align: left;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out 1s forwards;
         }
 
         ul {
@@ -44,9 +58,24 @@
         }
 
         li {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out 1.5s forwards;
         }
     </style>
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </head>
 <body>
 
@@ -54,23 +83,30 @@
 
     <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Soren's Image">
 
-    <h2>Education</h2>
-    <ul>
-        <li><strong>University of Maryland, College Park</strong></li> 
-        <li>      -B.S. Computer Science, Mathematics</li>
-        <li><strong>Relevant Coursework includes:</strong></li>
-        <li>      -Object Oriented Programming, Foundations in Cybersecurity, Analysis of Algorithms, Elements of Computer Systems, Programming Languages, Introduction to Cybersecurity, Introduction to Networking, Robotics, Discrete Mathematics, Applied Probability and Statistics, Linear Algebra and Differential Equations, Research Design Sciences</li>
-    </ul>
+    <button onclick="toggleSection('education')">Education</button>
+    <button onclick="toggleSection('experience')">Experience</button>
 
-    <h2>Experience</h2>
-    <ul>
+    <div id="education" style="display: none;">
+        <h2>Education</h2>
+        <ul>
+        <li><strong>University of Maryland, College Park</strong></li> 
+        <li>-B.S. Computer Science, Mathematics</li>
+        <li><strong>Relevant Coursework includes:</strong></li>
+        <li>-Object Oriented Programming, Foundations in Cybersecurity, Analysis of Algorithms, Elements of Computer Systems, Programming Languages, Introduction to Cybersecurity, Introduction to Networking, Robotics, Discrete Mathematics, Applied Probability and Statistics, Linear Algebra and Differential Equations, Research Design Sciences</li>
+        </ul>
+    </div>
+
+    <div id="experience" style="display: none;">
+        <h2>Experience</h2>
+        <ul>
         <li><strong>CS and Math Summer Internship.</strong></li>
-        <li>      -Over the summer, researched under the mentorship of William Gasarch at UMD. Conducted research related to Ramsey Theory in discrete mathematics. Integrated mathematical concepts into programming to test hypotheses and help brainstorm possible solutions.</li>
+        <li>-Over the summer, researched under the mentorship of William Gasarch at UMD. Conducted research related to Ramsey Theory in discrete mathematics. Integrated mathematical concepts into programming to test hypotheses and help brainstorm possible solutions.</li>
         <li><strong>Mars Rover Project.</strong> </li>
-        <li>      -As part of a small group, constructed a prototype instrument that could capture atmospheric data from a model exoplanet using Arduino tools available to the public. Brainstormed and hypothesized the functionality and constructability of the tool, assembled and programmed the tool, tested and interpreted data, and optimized the tool for potential real-world usage.</li>
+        <li>-As part of a small group, constructed a prototype instrument that could capture atmospheric data from a model exoplanet using Arduino tools available to the public. Brainstormed and hypothesized the functionality and constructability of the tool, assembled and programmed the tool, tested and interpreted data, and optimized the tool for potential real-world usage.</li>
         <li><strong>Counselor-in-training:</strong> </li>
-        <li>      `Volunteer for a summer camp, involving supervising 20 children for 8 hours a day. Designed daily activity schedules, supervised activities, administered activities (e.g., building towers out of everyday objects to teach basic concepts of physics), and ensured participant safety. Communicated and collaborated with participants to guarantee a pleasurable experience for everyone.</li>
-    </ul>
+        <li>-Volunteer for a summer camp, involving supervising 20 children for 8 hours a day. Designed daily activity schedules, supervised activities, administered activities (e.g., building towers out of everyday objects to teach basic concepts of physics), and ensured participant safety. Communicated and collaborated with participants to guarantee a pleasurable experience for everyone.</li>
+        </ul>
+    </div>
 
 </body>
 </html>
