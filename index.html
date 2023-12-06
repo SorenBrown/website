@@ -38,6 +38,24 @@
             animation: fadeIn 1.5s ease-out 0.5s forwards;
         }
 
+        .banner {
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
         button {
             font-size: 18px;
             margin: 10px;
@@ -72,12 +90,13 @@
 
     <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Soren's Image">
 
-    <a href="education.html">
-        <button>Education</button>
-    </a>
-    <a href="experience.html">
-        <button>Experience</button>
-    </a>
+    <div class="banner">
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+    </div>
+
+    <button onclick="toggleSection('education')">Education</button>
+    <button onclick="toggleSection('experience')">Experience</button>
 
     <div id="education" class="hidden">
         <!-- Content for education section (hidden by default) -->
