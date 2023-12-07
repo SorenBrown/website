@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soren's Portfolio</title>
     <style>
-        html, body {
+	html, body {
             margin: 0;
             padding: 0;
         }
 
         body {
-            background-color: white;
+            background-color: #495D63;
             color: purple;
             text-align: center;
             padding: 0px;
@@ -29,17 +29,22 @@
         }
 
         h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-	    margin-top: 20vh;
+            font-size: 72px;
+            margin-bottom: 60px;
+	    margin-top: 15vh;
+	    color: #98B6B1;
         }
 
         h2 {
             font-size: 24px;
+	    color: #FAC8CD;
         }
 
 	li {
 	    list-style-type: none;
+	    color: #EDBAD1;
+	    font-size: 24px;
+
 	}
 
         img {
@@ -53,7 +58,7 @@
         }
 
     .banner {
-        background-color: purple;
+        background-color: #629677;
         color: white;
         padding: 10px;
         margin-bottom: 20px;
@@ -70,7 +75,7 @@
         font-size: 18px;
         font-weight: bold;
         padding: 10px;
-        border: 2px purple;
+        border: 2px #629677;
         border-radius: 5px;
         margin: 0 10px; /* Add margin to the buttons for spacing */
         display: inline-block; /* Ensure each button is a block element */
@@ -79,52 +84,46 @@
         main {
             margin-top: 80px;
         }
+	.image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-        .hidden {
-            display: none;
+        .image-container img {
+            width: 300px; /* Adjust as needed */
+            height: 300px; /* Adjust as needed */
+            object-fit: cover;
+            border-radius: 50%; /* Creates a circular shape */
+            overflow: hidden;
+            margin: 0 50px; /* Adjust margin to provide space between images */
+        }
+
+        .text-container {
+            text-align: center;
         }
     </style>
-    <script>
-        function toggleSection(sectionId) {
-            var education = document.getElementById('education');
-            var experience = document.getElementById('experience');
-
-            if (sectionId === 'education') {
-                education.classList.remove('hidden');
-                experience.classList.add('hidden');
-            } else if (sectionId === 'experience') {
-                education.classList.add('hidden');
-                experience.classList.remove('hidden');
-            }
-        }
-    </script>
 </head>
 <body>
 
-    <div class="banner">
-        
+    <div class="banner">  
         <div>
             <a href="index.html">Home</a>
             <a href="education.html">Education</a>
             <a href="experience.html">Experience</a>
+	    <a href="contact.html">Contact Me</a>
         </div>
     </div>
     <h1 id="name">Soren Brown</h1>
-
-    <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Soren's Image">
-
-    <h2>About Me</h2>
-    
-    <li>My name is Soren Brown</li>
-    <li>I'm interested in AI and ML, I love mathematics and applying them into computer science.</li>
-    
-    <div id="education" class="hidden">
-        <!-- Content for education section (hidden by default) -->
+    <div class="image-container">
+    <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/me.jpg" alt="Soren's Image">
+        <div class="text-container">
+            <li>My name is Soren Brown.</li>
+    <li>I want to make a change in AI and ML!</li>
+    <li>I love mathematics and applying them into computer science.</li>
+    <li>I also love phyisical activity, including rock climbing, soccer, and volleyball.</li>
+        </div>
     </div>
-
-    <div id="experience" class="hidden">
-        <!-- Content for experience section (hidden by default) -->
-    </div>
-
 </body>
 </html>
