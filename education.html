@@ -11,7 +11,7 @@
         }
 
         body {
-            background-color: white;
+            background-color: #495D63;
             color: purple;
             text-align: center;
             padding: 0px;
@@ -29,21 +29,26 @@
         }
 
         h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            margin-top: 20vh;
+            font-size: 72px;
+            margin-bottom: 40px;
+            margin-top: 15vh;
+	    color: #98B6B1;
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 36px;
+	    color: #FAC8CD;
         }
 
         li {
             list-style-type: none;
+	    margin-left 50hl;
+            font-size: 24px;
+	    color: #EDBAD1;
         }
 
         .banner {
-            background-color: purple;
+            background-color: #629677;
             color: white;
             padding: 10px;
             margin-bottom: 20px;
@@ -60,25 +65,36 @@
             font-size: 18px;
             font-weight: bold;
             padding: 10px;
-            border: 2px solid white;
+            border: 0px ;
             border-radius: 5px;
             margin: 0 10px; /* Add margin to the buttons for spacing */
             display: inline-block; /* Ensure each button is a block element */
         }
 
-        img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-            margin: 20px auto;
-            opacity: 0;
-            animation: fadeIn 1.5s ease-out forwards;
-        }
-
         main {
             margin-top: 80px;
         }
+
+	.image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 200px; /* Adjust as needed */
+            height: 200px; /* Adjust as needed */
+            object-fit: cover;
+            border-radius: 50%; /* Creates a circular shape */
+            overflow: hidden;
+            margin: 0 50px; /* Adjust margin to provide space between images */
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -88,20 +104,29 @@
             <a href="index.html">Home</a>
             <a href="education.html">Education</a>
             <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+
         </div>
     </div>
 
     <h1>Education</h1>
 
-    <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Education Image">
+    <div class="image-container">
+    
+        <div class="text-container">
+            <h2> University of Maryland, College Park </h2>
+	    <li> B.S. Computer Science, Mathematics </li>
+	    <li> Expected 2027 </li>
 
-    <h2>University of Maryland, College Park</h2>
-    <ul>
-        <li>B.S. Computer Science, Mathematics</li>
-        <h2><strong>Relevant Coursework includes:</strong></h2>
-        <li>-Object Oriented Programming, Foundations in Cybersecurity, Analysis of Algorithms, Elements of Computer Systems, Programming Languages, Introduction to Cybersecurity, Introduction to Networking, Robotics, Discrete Mathematics, Applied Probability and Statistics, Linear Algebra and Differential Equations, Research Design Sciences</li>
-    </ul>
+        </div>
+	<img src="https://raw.githubusercontent.com/coolfishbobby/website/main/umd.jpg" alt="Soren's Image">
+    </div>
+    <h2>Relevant Coursework:</h2>
+    <li><strong>College: </strong>Object Oriented Programming, Intro to Computer Systems, Discrete Structures, Foundations in Cybersecurity,</li>
+    <li> Linear Alegbra, Applied Probability and Statistics, Multivariable Calculus, Differential Equations</li>
+    <li><strong>High School: </strong>Analysis of Algorithms, Elements of Computer Systems, Programming Languages, Introduction to Cybersecurity,</li>
+    <li> Intro to Networking, Robotics, Discrete Mathematics, Research Design Sciences</li>            
+    
 
 </body>
 </html>
-
