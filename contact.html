@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soren's Portfolio - Education</title>
+    <style>
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #495D63;
+            color: purple;
+            text-align: center;
+            padding: 0px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 72px;
+            margin-bottom: 40px;
+            margin-top: 15vh;
+	    color: #98B6B1;
+        }
+
+        h2 {
+            font-size: 36px;
+	    color: #FAC8CD;
+        }
+
+        li {
+            list-style-type: none;
+	    margin-left 50px;
+            font-size: 24px;
+	    color: #EDBAD1;
+        }
+	
+        .banner {
+            background-color: #629677;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .banner a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px #629677;
+            border-radius: 5px;
+            margin: 0 10px; /* Add margin to the buttons for spacing */
+            display: inline-block; /* Ensure each button is a block element */
+        }
+
+	img {
+            width: 80px;
+            height: 80px;
+	    border-radius: 50%; 
+            overflow: hidden;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+	.image-container {
+            text-align: center;
+	    align-items: center;
+	    font-size: 0px;
+        }
+
+        .image-container img {
+            width: 80px; /* Adjust as needed */
+            height: 80px; /* Adjust as needed */
+            object-fit: cover;
+            border-radius: 50%; /* Creates a circular shape */
+            overflow: hidden;
+            margin: 0 10px; /* Adjust margin to provide space between images */
+	    display: inline-block;
+        }
+
+        main {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </div>
+
+    <h1>Contact Me</h1>
+    <div class="image-container">
+        <a href="https://www.instagram.com/_soren_b_">
+            <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/insta.jpg" alt="Soren's Image">
+    	</a>
+        <a href="https://www.linkedin.com/in/soren-brown-789716257/">
+            <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/linkedin.jpg" alt="Soren's Image">
+        </a>
+	<a href="mailto:sorenkbrown@gmail.com">
+            <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/mail.jpg" alt="Soren's Image">
+        </a>
+    </div>
+     
+
+    
+
+</body>
+</html>
