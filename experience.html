@@ -1,15 +1,23 @@
-p<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soren's Experience</title>
+    <title>Soren's Portfolio - Education</title>
     <style>
+	body::-webkit-scrollbar {
+   	    width: 0;  /* Set the width to 0 to hide the scrollbar */
+	}
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            background-color: white;
+            background-color: #495D63;
             color: purple;
             text-align: center;
-            padding: 20px;
+            padding: 0px;
             opacity: 0;
             animation: fadeIn 1.5s ease-out forwards;
         }
@@ -24,68 +32,79 @@ p<!DOCTYPE html>
         }
 
         h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-            margin: 20px auto;
-            opacity: 0;
-            animation: fadeIn 1.5s ease-out 0.5s forwards;
+            font-size: 72px;
+            margin-bottom: 40px;
+            margin-top: 15vh;
+	    color: #98B6B1;
         }
 
         h2 {
             font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 10px;
-            text-align: left;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
+	    color: #FAC8CD;
         }
 
         li {
-            margin-bottom: 10px;
+            list-style-type: none;
+	    margin-left 50hl;
+            font-size: 24px;
+	    color: #EDBAD1;
+        }
+
+        .banner {
+            background-color: #629677;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .banner a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border: 0px ;
+            border-radius: 5px;
+            margin: 0 10px; /* Add margin to the buttons for spacing */
+            display: inline-block; /* Ensure each button is a block element */
+        }
+
+        main {
+            margin-top: 80px;
         }
     </style>
 </head>
 <body>
 
+    <div class="banner">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </div>
+
     <h1>Experience</h1>
 
-    <img src="https://raw.githubusercontent.com/coolfishbobby/website/main/elephant.jpg" alt="Experience Image">
+    <h2>CS and Math Summer Internship - May 2022 to Oct 2022</h2>
+    <li><strong>Researched under the mentorship of William Gasarch at the University of Maryland, College Park.</strong></li>
+    <li>Conducted research related to Ramsey Theory in discrete mathematics, focusing on unexplored research.</li>
+    <li>Integrated mathematical concepts into Java programming to test hypotheses and brainstorm solutions.</li>
+    <li>Presented research project at science fair and at schoolwide research symposium</li>
 
-    <h2>CS and Math Summer Internship</h2>
-    <ul>
-        <li><strong>Over the summer, researched under the mentorship of William Gasarch at UMD.</strong></li>
-        <li>-Conducted research related to Ramsey Theory in discrete mathematics.</li>
-        <li>-Integrated mathematical concepts into programming to test hypotheses and help brainstorm possible solutions.</li>
-    </ul>
+    <h2>Web Development - Sep 2023 to Present</h2>
+    <li>Making websites using html and C++</li>
 
-    <h2>Mars Rover Project</h2>
-    <ul>
-        <li><strong>As part of a small group, constructed a prototype instrument that could capture atmospheric data from a model exoplanet using Arduino tools available to the public.</strong></li>
-        <li>-Brainstormed and hypothesized the functionality and constructability of the tool.</li>
-        <li>-Assembled and programmed the tool, tested and interpreted data, and optimized the tool for potential real-world usage.</li>
-    </ul>
-
-    <h2>Counselor-in-training</h2>
-    <ul>
-        <li><strong>Volunteer for a summer camp, involving supervising 20 children for 8 hours a day.</strong></li>
-        <li>-Designed daily activity schedules, supervised activities, administered activities (e.g., building towers out of everyday objects to teach basic concepts of physics), and ensured participant safety.</li>
-        <li>-Communicated and collaborated with participants to guarantee a pleasurable experience for everyone.</li>
-    </ul>
+    <h2>Restaurant Shift Leader - Oct 2023 to Present</h2>
+    <li>Manage 4-6 employees at a time, mastering leadership and communication skills</li>
+    <li>Directly responsible for customer concerns and complaints, and oversight of other servers</li>
 
 </body>
 </html>
