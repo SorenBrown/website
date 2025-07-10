@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #495D63;
+    color: purple;
+    text-align: center;
+    padding: 0px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 40px;
+    margin-top: 15vh;
+    color: #98B6B1;
+}
+
+h2 {
+    font-size: 36px;
+    color: #FAC8CD;
+}
+
+li {
+    list-style-type: none;
+    font-size: 24px;
+    color: #EDBAD1;
+}
+
+/* Fix for missing colon */
+li {
+    margin-left: 50px;
+}
+
+.banner {
+    background-color: #629677;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 50px;
+}
+
+.text-container {
+    text-align: center;
+}
